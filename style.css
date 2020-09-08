@@ -1,32 +1,61 @@
+*{
+    box-sizing:border-box;
+}
 body {
-    background-color:red;
     font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    color:yellow;
-    font-family: 'Courier New', Courier, monospace;
-}
-p{
-    color:white;
-    background-color:black;
+    margin:0;
+    line-height:1.5;
+    
 }
 
-  /*Selektor ID mit dem Namen nummer-1*/
-  /*ID in html wird zu einem #*/
-  #nummer-1 {
-    background-color: pink;
-    color: black;
+a{
+    color:#000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
 }
-#nummer-2{
-    color:green;
+li{
+    list-style-type: none;
+    text-align: center;
+    margin:0 10px;
+}
+
+a:hover {
+color: #fff;
+background:#346a67;
+}
+
+#burger {   
+    border:none;
+    background: transparent;
+}
+
+.hidden {
+    display: none;
     }
 
-    /*Klassen dürfen den gleichen Namen haben*/
-    div{
-        height:100px; 
-        background: blue;
-        margin:10px;
+    .show { 
+        display: block;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items:center;
+    padding-left:5%;
+    padding-right: 5%;
     }
-    .aqua{
-        background-color: aqua;
-    }
+
+
+@media (min-width: 960px)
+{.hidden
+    {display:block;}
+
+    #burger{display:none;}
+
+    nav ul{display:flex;
+        margin:0
+        padding:0}
+
+}
+
